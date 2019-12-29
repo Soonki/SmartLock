@@ -28,6 +28,7 @@
 ## ソフトウェアアーキテクチャ
 
 ```puml
+@startuml
 class Servo{
     int pin
     float last_input
@@ -72,4 +73,5 @@ SmartLockManager --|> Lock
 SmartLockManager --|> Toggle
 SmartLockManager --|> BleTag
 Lock --|> Servo
+@enduml
 ```
